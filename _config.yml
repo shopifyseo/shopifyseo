@@ -32,21 +32,12 @@ facebook_username: shopifyseok
 
 # Build settings
 theme: minima
-defaultLang: en
-languages: [ "en" ]
-languageNames:
-  en: English
-exclude_from_localizations: [ "javascript", "images", "css" ]
 plugins:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-seo-tag
 
-permalink: /:title-:year-:month.html
-
-autopages:
-  enable: false
+permalink: /:year/:month/:title.html
 
 pagination:
   enable: true
