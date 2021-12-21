@@ -34,6 +34,7 @@ facebook_username: shopifyseok
 theme: minima
 languages: [ "en" ]
 exclude_from_localizations: [ "javascript", "images", "css" ]
+gems: [ "jekyll-feed","jekyll-multiple-languages-plugin","jekyll-paginate-v2","jekyll-seo-tag" ]
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
