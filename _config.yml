@@ -43,7 +43,7 @@ plugins:
 permalink: /:title-:year-:month.html
 
 autopages:
-  enable: true
+  enable: false
 
 pagination:
   enable: true
