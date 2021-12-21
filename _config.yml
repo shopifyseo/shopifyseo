@@ -28,7 +28,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.shopifyseo.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: shopifyseo
-facebook_username: shopifyseo
+facebook_username: shopifyseok
 
 # Build settings
 theme: minima
