@@ -32,7 +32,10 @@ facebook_username: shopifyseok
 
 # Build settings
 theme: minima
+defaultLang: en
 languages: [ "en" ]
+languageNames:
+  en: English
 exclude_from_localizations: [ "javascript", "images", "css" ]
 plugins:
   - jekyll-feed
