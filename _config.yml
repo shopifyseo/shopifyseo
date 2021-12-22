@@ -31,6 +31,7 @@ github_username: shopifyseo
 facebook_username: shopifyseok
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
@@ -39,15 +40,8 @@ plugins:
 
 permalink: /:year/:month/:title.html
 
-pagination:
-  enable: true
-  per_page: 8
-  offset: 2
-  permalink: '/page/:num/'
-  title: ':title - page :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 8
+paginate_path: /page:num
 
 # Exclude from processing.
 # The following items will not be processed, by default.
