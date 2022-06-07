@@ -1,0 +1,45 @@
+<header>
+    {% include top.html %}
+    <div class="max-w-7xl mx-auto px-4 mb-4 md:mb-0" x-data="{open:false}">
+        <div class="flex justify-between items-center py-4 space-x-16">
+            <a href="{{ '/' | relative_url }}"><img src="/images/logo.svg" class="w-44"></a>
+            <nav class="hidden md:flex grow items-center space-x-10">
+                {% include navigation.html %}
+            </nav>
+            <div class="hidden md:flex">
+                <form method="get" action="https://www.google.com/search" target="_blank">
+                    <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
+                    <div class="relative">
+                        <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
+                        <input name="q" type="text" value="" placeholder="{{ site.data.local.search_placeholder }}"
+                               class="h-8 rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
+                    </div>
+                </form>
+            </div>
+            <div class="md:hidden">
+                <div @click="open =! open"
+                     class="bg-white rounded-md p-2 inline-flex items-center justify-center text-neutral-600">
+                    <span class="sr-only">{{ site.data.local.menu }}</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div x-show="open" class="md:hidden" x-transition @click.away="open = false">
+            <div class="bg-white block py-2 rounded-b shadow-lg w-full border-t-2 border-neutral-700">
+                <nav class="flex flex-col p-4 space-y-1">
+                    {% include navigation.html %}
+                </nav>
+                <div class="px-4 pb-4">
+                    <form method="get" action="https://www.google.com/search" target="_blank">
+                        <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
+                        <div class="relative">
+                            <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
+                            <input name="q" type="text" value="" placeholder="{{ site.data.local.search_placeholder }}"
+                                   class="h-8 w-full rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

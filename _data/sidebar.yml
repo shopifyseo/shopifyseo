@@ -1,0 +1,40 @@
+- title: Must Read
+  links:
+    - title: Seller Center
+      url: /blog/welcome
+    - title: Affiliate
+      url: /blog/welcome
+    - title: sitemap
+      url: /blog/welcome
+    - title: feed
+      url: /blog/welcome
+- title: Special Services
+  links:
+    - title: 1
+      url: /blog/welcome
+    - title: 2
+      url: /blog/welcome
+    - title: 3
+      url: /blog/welcome
+    - title: 4
+      url: /blog/welcome
+- title: Shipping to
+  links:
+    - title: 5
+      url: /blog/welcome
+    - title: 6
+      url: /blog/welcome
+    - title: 7
+      url: /blog/welcome
+    - title: 8
+      url: /blog/welcome
+- title: About
+  links:
+    - title: About
+      url: /blog/welcome
+    - title: Privacy Policy
+      url: /privacy-policy
+    - title: Sitemap
+      url: /sitemap.xml
+    - title: RSS
+      url: /feed.xml

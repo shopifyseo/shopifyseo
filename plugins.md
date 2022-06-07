@@ -1,6 +1,6 @@
 ---
-layout: about
-title: About
+layout: plugins
+title: Plugins
 keywords:
 description:
 ---

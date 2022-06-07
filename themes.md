@@ -1,6 +1,6 @@
 ---
-layout: about
-title: About
+layout: themes
+title: Themes
 keywords:
 description:
 ---

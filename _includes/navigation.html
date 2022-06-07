@@ -1,0 +1,7 @@
+{% if site.data.navigation %}
+{% for item in site.data.navigation %}
+<a class="{% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
+    {{ item.title }}
+</a>
+{% endfor %}
+{% endif %}
