@@ -16,11 +16,11 @@ body {
 a {
     @apply text-neutral-500;
     &:hover {
-        @apply text-primary;
+        @apply text-primary-500;
     }
 
     &.active {
-        @apply text-primary;
+        @apply text-primary-500;
     }
 }
 
@@ -38,4 +38,12 @@ a {
             @apply rounded;
         }
     }
+}
+
+.themes_banner {
+    background-image: url("/images/themes_bg.svg");
+}
+
+.about_banner {
+    background-image: url("/images/about_bg.png");
 }
