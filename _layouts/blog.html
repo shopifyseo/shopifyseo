@@ -18,67 +18,15 @@
                 <div>
                     <h2 class="text-2xl mb-4">All Blogs</h2>
                     <div>
+                        {% if paginator %}
+                        {% assign posts = paginator.posts %}
+                        {% else %}
+                        {% assign posts = site.posts %}
+                        {% endif %}
                         <div class="grid md:grid-cols-3 gap-4">
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
-                            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                                <div class="p-4">
-                                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                                        delectus.
-                                    </div>
-                                    <div class="text-neutral-500">November 8, 2021</div>
-                                </div>
-                            </div>
+                            {% for post in posts %}
+                            {% include post.html %}
+                            {% endfor %}
                         </div>
                         {% if paginator %}
                         {% include paginator.html %}

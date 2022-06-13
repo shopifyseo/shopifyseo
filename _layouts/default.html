@@ -7,11 +7,15 @@
     <div class="max-w-7xl mx-auto px-4 mt-4 mb-8">
         <div class="grid md:grid-cols-2 gap-8">
             <div>
-                <div class="mt-4 md:mt-8 mb-4 text-neutral-500">November 8, 2021</div>
-                <h1 class="text-5xl md:w-10/12">New invoicing features to help you get paid faster</h1>
+                <div class="mt-4 md:mt-8 mb-4 text-neutral-500">{{ page.date | date: "%b %d, %Y" }}</div>
+                <h1 class="text-5xl md:w-10/12">{{ page.title}}</h1>
             </div>
             <div>
+                {% if page.cover %}
                 <img class="w-full rounded-md" src="/images/ads/ad.png">
+                {% else %}
+                <img class="rounded-t-lg" alt="" src="/images/cover_2_placeholder.svg">
+                {% endif %}
             </div>
         </div>
     </div>

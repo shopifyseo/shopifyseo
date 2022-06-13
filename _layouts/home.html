@@ -175,36 +175,9 @@
             <h2 class="text-2xl mt-4 mb-8">Read Our Latest Blog</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                <div class="p-4">
-                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                        delectus.
-                    </div>
-                    <div class="text-neutral-500">November 8, 2021</div>
-                </div>
-            </div>
-            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                <div class="p-4">
-                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                        delectus.
-                    </div>
-                    <div class="text-neutral-500">November 8, 2021</div>
-                </div>
-            </div>
-            <div class="rounded-md border border-neutral-200 hover:shadow-sm">
-                <img class="w-full rounded-t-md" src="/images/ads/ad.png">
-                <div class="p-4">
-                    <div class="text-lg"><a href="#">Neque beatae est beatae aut sequi aut quod.</a></div>
-                    <div class="py-4 text-neutral-400">Sit fuga voluptatem excepturi consequatur qui quia sed labore
-                        delectus.
-                    </div>
-                    <div class="text-neutral-500">November 8, 2021</div>
-                </div>
-            </div>
+            {% for post in site.posts limit:3 %}
+            {% include post.html %}
+            {% endfor %}
         </div>
     </div>
 </main>
