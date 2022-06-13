@@ -1,0 +1,13 @@
+- name: Test
+  cover: /images/ads/theme.png
+  description: est
+  url: https://www.shopifyseo.net
+  price: $50
+  system: Shopify
+
+- name: Test1
+  cover: /images/ads/theme.png
+  description: est
+  url: https://www.shopifyseo.net
+  price: $50
+  system: Wordpress

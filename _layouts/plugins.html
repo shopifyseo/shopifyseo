@@ -11,84 +11,9 @@
     </div>
     <div class="max-w-7xl mx-auto px-4 my-16">
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
-            <div class="space-y-2">
-                <a href="#"><img class="rounded-md" src="/images/ads/theme.png"></a>
-                <div class="flex justify-between">
-                    <div><a href="#">Aut est quod est et ut aliquid in et officia</a></div>
-                    <div><span class="text-primary-500 bg-primary-50 rounded-md">$56.00</span></div>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <div class="text-neutral-400">Quia maxime dolorem nisi omnis molestiae quibusdam
-                        accusantium.
-                    </div>
-                    <div><span>Shopify</span></div>
-                </div>
-            </div>
+            {% for plugin in site.data.plugins %}
+                {% include plugin.html %}
+            {% endfor %}
         </div>
     </div>
 </main>
