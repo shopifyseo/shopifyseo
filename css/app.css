@@ -13163,6 +13163,9 @@ a.active{
   .md\:mt-0{
     margin-top: 0px;
   }
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
   .md\:flex{
     display: flex;
   }

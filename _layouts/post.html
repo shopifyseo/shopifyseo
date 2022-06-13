@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+<body>
+{% include header.html %}
+<main>
+    <div class="max-w-7xl mx-auto px-4 mt-4 mb-16">
+        <div class="text-center text-xl mb-4">{{ page.title }}</div>
+        <div class="md:w-8/12 mx-auto">
+            <div class="markdown-body">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</main>
+{% include sidebar.html %}
+{% include footer.html %}
+</body>
+</html>
