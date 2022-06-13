@@ -4077,6 +4077,12 @@ select{
 .right-0{
   right: 0px;
 }
+.left-4{
+  left: 1rem;
+}
+.bottom-4{
+  bottom: 1rem;
+}
 .z-50{
   z-index: 50;
 }
@@ -4242,6 +4248,9 @@ select{
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+.overflow-auto{
+  overflow: auto;
+}
 .rounded{
   border-radius: 0.25rem;
 }
@@ -4382,13 +4391,13 @@ select{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 .uppercase{
   text-transform: uppercase;
@@ -4426,6 +4435,10 @@ select{
 .text-secondary-500{
   --tw-text-opacity: 1;
   color: rgb(0 75 61 / var(--tw-text-opacity));
+}
+.text-neutral-100{
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 .text-neutral-200{
   --tw-text-opacity: 1;
@@ -13089,6 +13102,9 @@ a.active{
 .about_banner {
   background-image: url("/images/about_bg.png");
 }
+.markdown-body figure {
+  margin: 0;
+}
 .hover\:bg-neutral-400:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -13132,6 +13148,12 @@ a.active{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px){
+  .md\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+  .md\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -13161,6 +13183,9 @@ a.active{
   }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .md\:flex-row{
     flex-direction: row;

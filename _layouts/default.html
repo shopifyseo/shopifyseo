@@ -4,6 +4,30 @@
 <body>
 {% include header.html %}
 <main>
+    <div class="max-w-7xl mx-auto px-4 mt-4 mb-8">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <div class="mt-4 md:mt-8 mb-4 text-neutral-500">November 8, 2021</div>
+                <h1 class="text-5xl md:w-10/12">New invoicing features to help you get paid faster</h1>
+            </div>
+            <div>
+                <img class="w-full rounded-md" src="/images/ads/ad.png">
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mb-16">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-3 overflow-auto">
+                <div class="markdown-body">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="md:col-span-1 space-y-4">
+                <div><a href="#"><img src="/images/ads/ad1.png"></a></div>
+                <div><a href="#"><img src="/images/ads/ad1.png"></a></div>
+            </div>
+        </div>
+    </div>
 </main>
 {% include sidebar.html %}
 {% include footer.html %}

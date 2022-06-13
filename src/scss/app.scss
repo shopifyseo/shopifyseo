@@ -47,3 +47,9 @@ a {
 .about_banner {
     background-image: url("/images/about_bg.png");
 }
+
+.markdown-body {
+    figure {
+        margin: 0;
+    }
+}
