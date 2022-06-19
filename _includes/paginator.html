@@ -5,24 +5,22 @@
     <ul>
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <li><a href="{{ first_page_path }}">{{ site.data.local.previous }}</a></li>
+        <li><a href="{{ first_page_path }}">Previous</a></li>
         {% else %}
         <li><a
-            href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{
-            site.data.local.previous }}</a>
+            href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">Previous</a>
         </li>
         {% endif %}
         {% else %}
-        <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.local.previous }}</span></a></li>
+        <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
         {% endif %}
 
         {% if paginator.next_page %}
         <li><a
-            href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | relative_url }}">{{
-            site.data.local.next }}</a>
+            href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | relative_url }}">Next</a>
         </li>
         {% else %}
-        <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.local.next }}</span></a></li>
+        <li><a href="#" class="disabled"><span aria-hidden="true">Next</span></a></li>
         {% endif %}
     </ul>
 </nav>

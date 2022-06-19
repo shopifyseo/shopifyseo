@@ -11,7 +11,7 @@
                     <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
                     <div class="relative">
                         <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
-                        <input name="q" type="text" value="" placeholder="{{ site.data.local.search_placeholder }}"
+                        <input name="q" type="text" value="" placeholder="Search..."
                                class="h-8 rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary-500 focus:ring-0">
                     </div>
                 </form>
@@ -19,7 +19,7 @@
             <div class="md:hidden">
                 <div @click="open =! open"
                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-neutral-600">
-                    <span class="sr-only">{{ site.data.local.menu }}</span>
+                    <span class="sr-only">Menu</span>
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                         <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
                         <div class="relative">
                             <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
-                            <input name="q" type="text" value="" placeholder="{{ site.data.local.search_placeholder }}"
+                            <input name="q" type="text" value="" placeholder="Search..."
                                    class="h-8 w-full rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary-500 focus:ring-0">
                         </div>
                     </form>
