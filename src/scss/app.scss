@@ -49,6 +49,14 @@ a {
 }
 
 .markdown-body {
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: auto;
+    }
+
     figure {
         margin: 0;
     }
