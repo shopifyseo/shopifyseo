@@ -1,6 +1,6 @@
 <header>
     {% include top.html %}
-    <div class="max-w-7xl mx-auto px-4 mb-4 md:mb-0" x-data="{open:false}">
+    <div class="max-w-7xl mx-auto px-4" x-data="{open:false}">
         <div class="flex justify-between items-center py-4 space-x-16">
             <a href="{{ '/' | relative_url }}"><img src="/images/logo.svg" class="w-44"></a>
             <nav class="hidden md:flex grow items-center space-x-10">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div x-show="open" class="md:hidden" x-transition @click.away="open = false">
+        <div x-show="open" class="md:hidden mb-4 md:mb-0" x-transition @click.away="open = false">
             <div class="bg-white block py-2 rounded-b shadow-lg w-full border-t-2 border-neutral-700">
                 <nav class="flex flex-col p-4 space-y-1">
                     {% include navigation.html %}
