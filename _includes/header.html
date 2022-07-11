@@ -2,7 +2,7 @@
     {% include top.html %}
     <div class="max-w-7xl mx-auto px-4" x-data="{open:false}">
         <div class="flex justify-between items-center py-4 space-x-16">
-            <a href="{{ '/' | relative_url }}"><img src="/images/logo.svg" class="w-44"></a>
+            <a href="{{ '/' | absolute_url }}"><img src="/images/logo.svg" class="w-44"></a>
             <nav class="hidden md:flex grow items-center space-x-10">
                 {% include navigation.html %}
             </nav>
