@@ -1,14 +1,14 @@
 - title: Must Read
   links:
-    - title: Seller Center
+    - title: 1
       url: /blog/welcome
-    - title: Affiliate
+    - title: 2
       url: /blog/welcome
-    - title: sitemap
+    - title: 3
       url: /blog/welcome
-    - title: feed
+    - title: 4
       url: /blog/welcome
-- title: Special Services
+- title: Featured Services
   links:
     - title: 1
       url: /blog/welcome
@@ -18,7 +18,7 @@
       url: /blog/welcome
     - title: 4
       url: /blog/welcome
-- title: Shipping to
+- title: FAQ
   links:
     - title: 5
       url: /blog/welcome
